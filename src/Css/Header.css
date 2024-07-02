@@ -1,0 +1,145 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #14ABD0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+.header__logo {
+    width: 150px;
+    object-fit: contain;
+    margin: 0 10px;
+}
+
+.header__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+    background-color: white;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.header__searchInput {
+    height: 20px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 24px;
+    outline: none;
+}
+
+.header__searchIcon {
+    padding: 5px;
+    height: 22px;
+    background-color: #cd9042;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header__cartIcon {
+    padding: 5px;
+    height: 29px;
+    background-color: #14ABD0;
+    cursor: pointer;
+}
+
+.header__optionLineOne {
+    font-size: 12px;
+}
+
+.header__optionLineTwo {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.header__optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header__option:hover {
+    box-shadow: 0 0 0 0.5px #FFFFFF;
+}
+
+Link {
+    text-decoration: none;
+}
+
+.header__option a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header__logo {
+        width: 120px;
+        margin: 0 10px;
+    }
+    
+    .header__search {
+        flex: 1;
+    }
+
+    .header__option {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .header__logo {
+        width: 100px;
+        margin: 10px 0;
+    }
+
+    .header__search {
+        flex: 1;
+        margin: 10px 0;
+    }
+    
+    .header__option {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .header__option a {
+        padding: 10px;
+    }
+}

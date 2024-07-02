@@ -1,0 +1,107 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-height: 400px;
+    min-width: 100px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow for better styling */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.product__rating {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.product > img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product > button {
+    background-color: rgb(141, 205, 205);
+    color: black;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.product > button:hover {
+    background-color: rgb(6, 240, 14);
+}
+
+.product__price {
+    margin-top: 5px;
+    font-size: 1.2rem; /* Adjusted font size for better readability */
+}
+
+.product__info {
+    height: 100px;
+    margin-bottom: 15px;
+    text-align: center; /* Center text for better alignment */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .product {
+        padding: 15px;
+        max-height: 350px;
+    }
+
+    .product > img {
+        max-height: 180px;
+    }
+
+    .product > button {
+        padding: 8px 25px;
+        margin-top: 8px;
+    }
+
+    .product__price {
+        font-size: 1rem;
+    }
+
+    .product__info {
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        padding: 10px;
+        max-height: 300px;
+    }
+
+    .product > img {
+        max-height: 160px;
+    }
+
+    .product > button {
+        padding: 6px 20px;
+        margin-top: 6px;
+    }
+
+    .product__price {
+        font-size: 0.9rem;
+    }
+
+    .product__info {
+        height: 80px;
+    }
+}
