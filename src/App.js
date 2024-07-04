@@ -32,7 +32,7 @@ function App() {
           />
           <Route
             path="/sustainability"
-            element={[ <SustainabilityReportsSection/> ]}
+            element={[<Headergreen/>,<Navbarg/>, <SustainabilityReportsSection/>, <Footer/>  ]}
           />
 
         </Routes>
