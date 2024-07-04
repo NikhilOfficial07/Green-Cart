@@ -11,6 +11,7 @@ import SellerSection from "./Component/SellerSection";
 import Homegreen from "./Component/Homegreen";
 import SustainabilityReportsSection from "./Component/Sustainability";
 import EducationSection from "./Component/Educationsection";
+import Orders from "./Component/Orders";
 
 
 function App() {
@@ -54,10 +55,9 @@ function App() {
               <Footer />,
             ]}
           />
-          <Route path="/orders" element={[<Header />, <Navbarg />]} />
+          <Route path="/orders" element={[<Header />, <Navbarg />, <Orders/>]} />
           <Route path="/checkout" element={[<Header />,  <Footer/>  ]}/>
           <Route path="/dashboard" element={[<Header />, <Navbarg />]} />
-        
         </Routes>
       </div>
     </Router>
