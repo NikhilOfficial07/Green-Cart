@@ -8,13 +8,13 @@ import Footer from "./Component/Footer";
 import Headergreen from "./Component/Headergreen"
 import Navbarg from "./Component/navbargreen";
 import SellerSection from "./Component/SellerSection";
-
 import Homegreen from "./Component/Homegreen";
+import SustainabilityReportsSection from "./Component/Sustainability";
 
 
 function App() {
   return (
-    // BEM
+    
     <Router>
       <div className="app">
         <Routes>
@@ -30,6 +30,11 @@ function App() {
             path="/seller"
             element ={[<Headergreen/>,<Navbarg/>,<SellerSection/>,<Footer/>]}
           />
+          <Route
+            path="/sustainability"
+            element={[ <SustainabilityReportsSection/> ]}
+          />
+
         </Routes>
       </div>
     </Router>
