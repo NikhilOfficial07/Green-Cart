@@ -39,6 +39,10 @@ function App() {
            path="/education" 
            element={[<Headergreen/>,<Navbarg/> ]}
            />
+              <Route 
+              path="/orders" 
+              element={[<Header />, <Footer/>]}
+              />
         </Routes>
       </div>
     </Router>
