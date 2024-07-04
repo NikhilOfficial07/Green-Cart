@@ -13,7 +13,7 @@ import SustainabilityReportsSection from "./Component/Sustainability";
 import EducationSection from "./Component/Educationsection";
 import Orders from "./Component/Orders";
 import Checkout from "./Component/Checkout";
-
+import Thanks from "./Component/Thanks";
 
 function App() {
   return (
@@ -59,6 +59,7 @@ function App() {
           <Route path="/orders" element={[<Header />, <Navbarg />, <Orders/>]} />
           <Route path="/checkout" element={[<Header />, <Checkout/>, <Footer/>  ]}/>
           <Route path="/dashboard" element={[<Header />, <Navbarg />]} />
+          <Route path="/thanks" element={[<Header />, <Thanks/>]}/> 
         </Routes>
       </div>
     </Router>
