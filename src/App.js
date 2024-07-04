@@ -34,7 +34,11 @@ function App() {
             path="/sustainability"
             element={[<Headergreen/>,<Navbarg/>, <SustainabilityReportsSection/>, <Footer/>  ]}
           />
-
+          
+          <Route 
+           path="/education" 
+           element={[<Headergreen/>,<Navbarg/> ]}
+           />
         </Routes>
       </div>
     </Router>
