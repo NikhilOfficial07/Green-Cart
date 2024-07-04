@@ -7,7 +7,7 @@ import Home from "./Component/Home";
 import Footer from "./Component/Footer";
 import Headergreen from "./Component/Headergreen"
 import Navbarg from "./Component/navbargreen";
-
+import SellerSection from "./Component/SellerSection";
 
 import Homegreen from "./Component/Homegreen";
 
@@ -25,6 +25,10 @@ function App() {
           <Route
             path="/"
             element={[<Header />, <NavBar />, <Home />, <Footer />]}
+          />
+          <Route
+            path="/seller"
+            element ={[<SellerSection/>]}
           />
         </Routes>
       </div>
