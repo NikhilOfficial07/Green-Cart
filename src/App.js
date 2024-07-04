@@ -14,6 +14,8 @@ import EducationSection from "./Component/Educationsection";
 import Orders from "./Component/Orders";
 import Checkout from "./Component/Checkout";
 import Thanks from "./Component/Thanks";
+import ProductDetails from "./Css/ProductDetails";
+import ProductDetails1 from "./Css/ProductDetails1";
 
 function App() {
   return (
@@ -60,6 +62,8 @@ function App() {
           <Route path="/checkout" element={[<Header />, <Checkout/>, <Footer/>  ]}/>
           <Route path="/dashboard" element={[<Header />, <Navbarg />]} />
           <Route path="/thanks" element={[<Header />, <Thanks/>]}/> 
+          <Route path="/product" element={[<Headergreen />, <Navbarg />, <ProductDetails />, <Footer />]}/>
+          <Route path="/product1" element={[<Headergreen />, <Navbarg />, <ProductDetails1 />, <Footer />]}/>
         </Routes>
       </div>
     </Router>
