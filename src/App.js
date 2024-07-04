@@ -28,7 +28,7 @@ function App() {
           />
           <Route
             path="/seller"
-            element ={[<SellerSection/>]}
+            element ={[<Headergreen/>,<Navbarg/>,<SellerSection/>,<Footer/>]}
           />
         </Routes>
       </div>
