@@ -12,6 +12,7 @@ import Homegreen from "./Component/Homegreen";
 import SustainabilityReportsSection from "./Component/Sustainability";
 import EducationSection from "./Component/Educationsection";
 import Orders from "./Component/Orders";
+import Checkout from "./Component/Checkout";
 
 
 function App() {
@@ -56,7 +57,7 @@ function App() {
             ]}
           />
           <Route path="/orders" element={[<Header />, <Navbarg />, <Orders/>]} />
-          <Route path="/checkout" element={[<Header />,  <Footer/>  ]}/>
+          <Route path="/checkout" element={[<Header />, <Checkout/>, <Footer/>  ]}/>
           <Route path="/dashboard" element={[<Header />, <Navbarg />]} />
         </Routes>
       </div>
