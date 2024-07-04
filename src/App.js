@@ -10,11 +10,11 @@ import Navbarg from "./Component/navbargreen";
 import SellerSection from "./Component/SellerSection";
 import Homegreen from "./Component/Homegreen";
 import SustainabilityReportsSection from "./Component/Sustainability";
+import EducationSection from "./Component/Educationsection";
  
 
 function App() {
   return (
-    
     <Router>
       <div className="app">
         <Routes>
@@ -28,30 +28,29 @@ function App() {
           />
           <Route
             path="/seller"
-            element ={[<Headergreen/>,<Navbarg/>,<SellerSection/>,<Footer/>]}
+            element={[
+              <Headergreen />,
+              <Navbarg />,
+              <SellerSection />,
+              <Footer />,
+            ]}
           />
           <Route
             path="/sustainability"
-            element={[<Headergreen/>,<Navbarg/>, <SustainabilityReportsSection/>, <Footer/>  ]}
+            element={[
+              <Headergreen />,
+              <Navbarg />,
+              <SustainabilityReportsSection />,
+              <Footer />,
+            ]}
           />
+
+          <Route path="/education" element={[<Headergreen />, <Navbarg />,<EducationSection />,
+              <Footer />]} />
+          <Route path="/orders" element={[<Header />, <Navbarg />]} />
+          <Route path="/checkout" element={[<Header />, <Navbarg />]} />
+          <Route path="/dashboard" element={[<Header />, <Navbarg />]} />
           
-          <Route 
-           path="/education" 
-           element={[<Headergreen/>,<Navbarg/> ]}
-           />
-              <Route 
-              path="/orders" 
-              element={[<Header />,<Navbarg/>]}
-              />
-              <Route 
-              path="/checkout" 
-              element={[<Header />,<Navbarg/>  ]}
-              />
-               <Route 
-               path="/dashboard" 
-               element={[<Header />, <Navbarg/>]}
-                />
-              
         </Routes>
       </div>
     </Router>
