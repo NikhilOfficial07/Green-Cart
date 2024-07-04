@@ -10,7 +10,7 @@ import Navbarg from "./Component/navbargreen";
 import SellerSection from "./Component/SellerSection";
 import Homegreen from "./Component/Homegreen";
 import SustainabilityReportsSection from "./Component/Sustainability";
-
+ 
 
 function App() {
   return (
@@ -41,8 +41,17 @@ function App() {
            />
               <Route 
               path="/orders" 
-              element={[<Header />, <Footer/>]}
+              element={[<Header />,<Navbarg/>]}
               />
+              <Route 
+              path="/checkout" 
+              element={[<Header />,<Navbarg/>  ]}
+              />
+               <Route 
+               path="/dashboard" 
+               element={[<Header />, <Navbarg/>]}
+                />
+              
         </Routes>
       </div>
     </Router>
