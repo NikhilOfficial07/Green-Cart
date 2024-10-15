@@ -17,14 +17,15 @@ import Thanks from "./Component/Thanks";
 import ProductDetails from "./Component/ProductDetails";
 import ProductDetails1 from "./Component/ProductDetails1";
 import Dashboard from "./Component/Dashboard";
+import Login from "./Component/Login";
 
 function App() {
   return (
     <Router>
       <div className="app">
         <Routes>
-          <Route path="/green" element={[<Headergreen />, <Navbarg />, <Homegreen />, <Footer />]} />
           <Route path="/" element={[<Header />, <NavBar />, <Home />, <Footer />]} />
+          <Route path="/green" element={[<Headergreen />, <Navbarg />, <Homegreen />, <Footer />]} />
           <Route path="/seller" element={[<Headergreen />, <Navbarg />, <SellerSection />, <Footer />]} />
           <Route path="/sustainability" element={[<Headergreen />, <Navbarg />, <SustainabilityReportsSection />, <Footer />]} />
           <Route path="/education" element={[<Headergreen />, <Navbarg />, <EducationSection />, <Footer />]} />
@@ -34,6 +35,7 @@ function App() {
           <Route path="/thanks" element={[<Header />, <Thanks />]} />
           <Route path="/product" element={[<Headergreen />, <Navbarg />, <ProductDetails />, <Footer />]} />
           <Route path="/product1" element={[<Headergreen />, <Navbarg />, <ProductDetails1 />, <Footer />]} />
+          <Route path="/login" element={[<Login/>]} />
         </Routes>
       </div>
     </Router>

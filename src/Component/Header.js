@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { useStateValue } from "../StateProvider";
 
 function Header() {
-  const [{ basket }, dispatch] = useStateValue();
-
+  const [ {basket} , dispatch] = useStateValue();
+  console.log(basket);
   const handleLinkClick = () => {
     // Scroll to the top of the page when the link is clicked
     window.scrollTo(0, 0, { behavior: "instant" });
@@ -31,12 +31,13 @@ function Header() {
       </div>
 
       <div className="header__nav">
-        <Link style={{ textDecoration: "none" }} to="/">
+        <Link style={{ textDecoration: "none" }} to="/login">
           <div className="header__option">
             <span className="header__optionLineOne">Hello Guest</span>
             <span className="header__optionLineTwo">Sign In</span>
           </div>
         </Link>
+
 
         <Link style={{ textDecoration: "none" }} to="/orders">
           <div className="header__option">
