@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Css/Orders.css";
-import { useStateValue } from "../StateProvider";
-import CheckoutProduct from "./CheckoutProduct";
+import { useStateValue } from "../StateProvider";  
 import OrderedProduct from "./orderedProduct";
 
 function Orders() {
